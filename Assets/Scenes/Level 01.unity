@@ -1017,6 +1017,28 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d0c1f82e2a475394c855031bda2973c1, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1887491062 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 101844, guid: d0c1f82e2a475394c855031bda2973c1, type: 2}
+  m_PrefabInternal: {fileID: 1887491061}
+--- !u!114 &1887491063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1887491062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 544f2064df03e95419b4a5147c506b08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingHealth: 100
+  currentHealth: 0
+  healthSlider: {fileID: 809885918}
+  damageImage: {fileID: 1637611298}
+  deathClip: {fileID: 8300000, guid: d36a393bca4582043982db9089e1694f, type: 3}
+  flashSpeed: 5
+  flashColour: {r: 1, g: 0, b: 0, a: 0.1}
 --- !u!4 &1887491068 stripped
 Transform:
   m_PrefabParentObject: {fileID: 482542, guid: d0c1f82e2a475394c855031bda2973c1, type: 2}
@@ -1235,7 +1257,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   spreadCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -1257,7 +1279,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
 --- !u!135 &2095773277
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1298,6 +1320,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 84
   m_CollisionDetection: 0
+--- !u!114 &2095773280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2095773273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e15099f5ee559584089d5851df572def, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeBetweenAttacks: 0.5
+  attackDamage: 10
 --- !u!4 &2095773281 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400074, guid: be66986effd141b4992d2d78be127139, type: 3}
