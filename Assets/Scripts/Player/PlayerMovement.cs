@@ -39,8 +39,9 @@ public class PlayerMovement : MonoBehaviour
 
     void Turning()
     {
-        Ray camRay = Camera.main.ScreenPointToRay(Input.mousePosition);
 
+        Ray camRay = Camera.main.ScreenPointToRay(Input.mousePosition);
+        
         RaycastHit floorHit;
 
         if (Physics.Raycast(camRay, out floorHit, camRayLength, floorMask))

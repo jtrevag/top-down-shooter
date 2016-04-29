@@ -66,7 +66,7 @@ public class PlayerShooting : MonoBehaviour
         gunLine.SetPosition (0, transform.position);
 
         shootRay.origin = transform.position;
-        shootRay.direction = transform.forward + new Vector3(Random.Range(-.05f, .05f), Random.Range(-.02f, .02f), 0);
+        shootRay.direction = transform.forward + new Vector3(Random.Range(-.02f, .02f), 0, Random.Range(-.02f, .02f));
         
 
         if (Physics.Raycast (shootRay, out shootHit, range, shootableMask))
